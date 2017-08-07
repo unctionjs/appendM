@@ -1,13 +1,16 @@
 /* eslint-disable flowtype/require-parameter-type, flowtype/require-return-type */
 import {test} from "tap"
 
-import tempLate from "./"
+import appendM from "./"
 
 test(({same, end}) => {
-  same(
-    tempLate(true),
-    false
-  )
+  same(appendM("a")([]), ["a"])
+
+  end()
+})
+
+test(({same, end}) => {
+  same(appendM("b")(["a"]), ["a", "b"])
 
   end()
 })

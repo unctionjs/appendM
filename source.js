@@ -1,3 +1,7 @@
-export default function tempLate (alpha: mixed): mixed {
-  return alpha
+export default function appendM (value: any): Function {
+  return function appendMValue (list: Array<any>): Array<any> {
+    list.push(value)
+
+    return list
+  }
 }

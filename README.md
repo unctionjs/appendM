@@ -1,17 +1,29 @@
-# @unction/tempLate
+# @unction/appendM
+
 
 ![Tests][BADGE_TRAVIS]
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> mixed -> mixed
+> any -> Array<any> -> Array<any>
 
-An example function.
+Takes an array and an item and returns the combination of both, appended.
+
+NOTE: This mutates the array
 
 ``` javascript
-tempLate(1) // 1
+const data = [1, 2, 3]
+
+appendM(4)(data)
 ```
 
-[BADGE_TRAVIS]: https://img.shields.io/travis/unctionjs/tempLate.svg?maxAge=2592000&style=flat-square
+Would return:
+
+``` javascript
+[1, 2, 3, 4]
+```
+
+[BADGE_TRAVIS]: https://img.shields.io/travis/unctionjs/appendM.svg?maxAge=2592000&style=flat-square
+
 [BADGE_STABILITY]: https://img.shields.io/badge/stability-strong-green.svg?maxAge=2592000&style=flat-square
-[BADGE_DEPENDENCY]: https://img.shields.io/david/unctionjs/tempLate.svg?maxAge=2592000&style=flat-square
+[BADGE_DEPENDENCY]: https://img.shields.io/david/unctionjs/appendM.svg?maxAge=2592000&style=flat-square
