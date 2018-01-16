@@ -5,7 +5,7 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> any -> Array<any> -> Array<any>
+> any => Array<any> => Array<any>
 
 Takes an array and an item and returns the combination of both, appended.
 
