@@ -1,7 +1,6 @@
-export default function appendM (value: any): Function {
-  return function appendMValue (list: Array<any>): Array<any> {
-    list.push(value)
-
-    return list
-  }
+export default function appendM(value) {
+  return function appendMValue(list) {
+    list.push(value);
+    return list;
+  };
 }
