@@ -4,7 +4,7 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> ValueType => ArrayType => ArrayType
+> A => Array<B> => Array<A | B>
 
 Takes an array and an item and returns the combination of both, appended.
 
