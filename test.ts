@@ -1,10 +1,10 @@
 
 import appendM from "./index";
 
-test(() => {
+test("works", () => {
   expect(appendM("a")([])).toEqual(["a"]);
 });
 
-test(() => {
+test("works", () => {
   expect(appendM("b")(["a"])).toEqual(["a", "b"]);
 });
